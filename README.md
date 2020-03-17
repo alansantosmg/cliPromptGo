@@ -1,16 +1,15 @@
 # cliPromptGo Package
 
-CliPrompt é um componente reutilizável desenvolvido com objetivo de fornecer  prompts de entrada de dados de usuários.
+CliPrompt é um componente reutilizável desenvolvido com objetivo de fornecer prompts de entrada de dados de usuários.
 
-O componente composto por funções que podem ser adicionada em aplicações GO que implementem algum tipo de CLI (interface de linha de comando).
+O componente é composto por funções que podem ser adicionadas em aplicações GO que implementem algum tipo de CLI (interface de linha de comando).
 
-Ao utilizar o CliPrompt o desenvolvedor fica liberado da criação de prompts e pode se
-concentrar no desenvolvimento das funções de comando de sua CLI.
+Ao utilizar o CliPrompt, o desenvolvedor fica liberado da criação de prompts e pode se concentrar no desenvolvimento das funções de comando de sua CLI.
 
-Para utilizar o componente é necessário baixar e importá-lo para sua aplicação:
+Para utilizar o componente é necessário baixá-lo e importá-lo para sua aplicação:
 
 ## Donwload
-Uma vez configurado seu ambiente Go utilize o comando:
+Uma vez configurado seu ambiente Go, utilize o comando:
 ```
 go get https://github.com/alansantosmg/cliPromptGo
 ```
@@ -30,9 +29,9 @@ Na aplicação, invocar a função:
 ```
 userStringInput(prompt)
 ```
-A função userStringInput recebe um parâmetro prompt do tipo string e retorna um valor do tipo string referente ao que foi digitado pelo usuário no prompt de comando.
+A função userStringInput recebe um parâmetro prompt do `tipo string` e retorna um `valor do tipo string` referente ao que foi digitado pelo usuário no prompt de comando.
 
-O parâmetro prompt permite personalizar a mensagem que será mostrada ao usuário no indicando a entrada no prompt de comando
+O parâmetro `prompt` permite personalizar a mensagem que será mostrada ao usuário na entrada no prompt de comando.
 
 ### Exemplo:
 
@@ -65,9 +64,9 @@ func main() {
 * se o usuário digitar qualquer caracter exceto espaço em branco e teclar `enter` a função retornará o que foi digitado.
 
 ## TO-DO:
-[x] vrs 0.9 Função userStringInput(prompt)
-[ ] vrs 1.0 Reestruturar aplicação na forma de package
-[ ] vrs 1.0 implementar função de conversão de entrada para tipo Int
-[ ] vrs 1.1 Implementar função de conversão de entrada para tipo float64
-[ ] vrs 1.x Implementar função de conversão de entrada para outros tipos
-[ ] vrs 2.0 Implementar controle de bloqueio de sequências de escape
+* [x] vrs 0.9 Função userStringInput(prompt).
+* [ ] vrs 1.0 Reestruturar aplicação na forma de package.
+* [ ] vrs 1.0 implementar função de conversão de entrada e retorno para tipo Int.
+* [ ] vrs 1.1 Implementar função de conversão de entrada e retorno para tipo float64.
+* [ ] vrs 1.x Implementar função de conversão de entrada e retorno para outros tipos.
+* [ ] vrs 2.0 Implementar função de bloqueio de sequências de escape.
